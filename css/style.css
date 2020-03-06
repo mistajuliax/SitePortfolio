@@ -1,4 +1,4 @@
-
+/************************************** Header ******************************************/
 .header {
     background-color:#161e27;
     position:fixed;
@@ -20,17 +20,20 @@
 }
 
 .header ul li a{
-    color:#fff;
+    
     display:block; /* pour cliquer exactement sur le mot*/
     padding:10px;
 }
+
+
+
 .header .menu{
-    clear:both; /*oblige le menu à être sous le logo*/
+ /*oblige le menu à être sous le logo*/
     max-height:0;
     transition:max-height .2s ease-out; /* collapse le menu*/ 
 }
 
-/************************ checkbox devient le menu burger********************************/
+/************************ checkbox devient le menu burger ********************************/
 
 .header .menu-icon{ /* span dans la class nav-icon conteneur du menu burger*/ 
     /* pour rendre visible le conteneur
@@ -98,6 +101,8 @@
     top:0;
 }
 
+/****************************** Header *****************************************************************/
+
 .menu li {
     display:flex;
     -moz-user-select: none;
@@ -119,6 +124,7 @@
     user-select: none;
 }
 
+/******************************** HOME ***********************/
 #home {
     display:flex;
     flex-flow:column wrap;
@@ -126,24 +132,44 @@
     padding-top: 40px;
 }
 
+/******************************** Portfolio *********************/
+
 .recommandation{
     color:#fff;
 }
 
+/******************************* Contact ************************/
+
 #contact
 {
-    
+    padding top:50px;
 }
 
-#contact h3{
-    color:#fff;
-    font size:4.0rem;
+#recommandations{
+
 }
 
+/******************************* Footer **************************/
+.footer {
 
-footer
-{
-    background-color: #ffffff;
+    background-color: #161e27;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+}
+
+.flex-around {
+    display:flex;
+    justify-content: space-around;
+}
+
+.fab {
+    color:white;
+    font-size:200%;
+    margin:20% 50% ;
 }
 
 @media (min-width:48em){

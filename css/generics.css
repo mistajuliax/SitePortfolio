@@ -2,8 +2,7 @@
     box-sizing: border-box;
     margin:0;
     padding:0;
-    outline: none;
-    text-decoration:none;
+
 }
 
 html {
@@ -20,10 +19,15 @@ body {
     -ms-user-select: none;
     -o-user-select: none;
     user-select: none;
+    color: #ffffff;
+}
+
+.conteneur{
+    display:flex;
+    flex-flow: row wrap;
 }
 
 h1 {    
-    color: #ffffff;
     font-size: 40px;
     font-size-adjust: auto;
     max-width : 320px;
@@ -32,7 +36,6 @@ h1 {
 }
 
 h2 {
-    color: #ffffff;
     font-size: 30px;
     font-size-adjust: auto;
     max-width: 320px;
@@ -40,19 +43,19 @@ h2 {
     margin-top:10px;
 }
 
+h3{
+    font size:4.0rem;
+}
+
 p {
-    color: #ffffff;
     margin-top: 50px;
     font-size:2.0rem;
 
 }
 
-.label{
-    color:#fff;
-}
-
 a, a:active, a:checked {
-    background-color: transparent; /*initial !important;*/
+    background-color: initial !important;
+    -webkit-tap-highlight-color: transparent;
 }
 
 .btn:active {
