@@ -1,0 +1,170 @@
+
+.header {
+    background-color:#161e27;
+    position:fixed;
+    width:100%;
+    z-index:3;
+}
+
+.header .logo {
+    float:left;
+    display:block;
+    padding: 5px 5px;
+}
+
+.header ul{
+    margin:0;
+    padding:0;
+    list-style:none;
+    overflow:hidden;
+}
+
+.header ul li a{
+    color:#fff;
+    display:block; /* pour cliquer exactement sur le mot*/
+    padding:10px;
+}
+.header .menu{
+    clear:both; /*oblige le menu à être sous le logo*/
+    max-height:0;
+    transition:max-height .2s ease-out; /* collapse le menu*/ 
+}
+
+/************************ checkbox devient le menu burger********************************/
+
+.header .menu-icon{ /* span dans la class nav-icon conteneur du menu burger*/ 
+    /* pour rendre visible le conteneur
+    border:1px solid #000; */
+    padding: 28px 24px;
+    position:relative; /* conteneur parent pour le span, position absolute sur ces enfants.*/
+    float:right; /* on bouge le menu " droite" check box etc ...*/
+    cursor: pointer;
+}
+
+/* creation menu burger */
+.header .menu-icon .nav-icon{ /*label est le parent et nav icon est son enfant(span) devient le menu burger*/
+    background:#fff;
+    display:block;
+    height:2px;
+    width:18px;
+    position:relative;
+    transition:background .2s ease-out;
+}
+
+.header .menu-icon .nav-icon:before{
+    background:#fff;
+    content:"";/* ne contient rien*/
+    display:block;
+    height:100%;
+    width:100%;
+    position:absolute; /* absolute par rapport à son parent label*/
+    transition:all .2s ease-out;
+    top:5px;/*ici on bouge la position du trait "haut" du menu burger*/
+} 
+
+.header .menu-icon .nav-icon:after{
+    background:#fff;
+    content:"";/* ne contient rien*/
+    display:block;
+    height:100%;
+    width:100%;
+    position:absolute; /* absolute par rapport à son parent label*/
+    transition:all .2s ease-out;
+    top:-5px;/*ici on bouge la position du trait "bas" du menu burger*/
+}
+
+.header .menu-btn{
+    display:none; /* checkbox disparait*/
+}
+
+/* transition magique*/
+
+.header .menu-btn:checked ~ .menu{ /* menu déroulant : checked state*/
+    max-height:300px; /* taille menu déroulant, ici il est animé car son parent .header .menu a une transition*/ 
+/* le for du label doit correspondre à l'id de l'input pour que le label soit clicable*/
+}
+
+/* animer le menu burger*/
+
+.header .menu-btn:checked ~ .menu-icon .nav-icon{
+    background:transparent;
+}
+.header .menu-btn:checked ~ .menu-icon .nav-icon:before{
+    transform:rotate(-45deg);
+    top:0;
+}
+.header .menu-btn:checked ~ .menu-icon .nav-icon:after{
+    transform:rotate(45deg);
+    top:0;
+}
+
+.menu li {
+    display:flex;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.menu li a {
+    color:#fff;
+    margin:5px;
+    font-size:10px;
+    font-size: 2.0rem;
+    text-decoration: none;
+    outline: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+#home {
+    display:flex;
+    flex-flow:column wrap;
+    align-items: center;
+    padding-top: 40px;
+}
+
+.recommandation{
+    color:#fff;
+}
+
+#contact
+{
+    
+}
+
+#contact h3{
+    color:#fff;
+    font size:4.0rem;
+}
+
+
+footer
+{
+    background-color: #ffffff;
+}
+
+@media (min-width:48em){
+
+    .header li {
+        float:left;
+    }
+
+    .header li a{
+        padding:20px 30px;
+    }
+
+    .header .menu{
+        clear:none;
+        float:right;
+        max-height:none;
+    }
+
+    .header .menu-icon{
+        display:none;
+    }
+
+
+}
