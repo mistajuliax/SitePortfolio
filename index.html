@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+    
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="icons/favicon.ico" />
+        <link href="css/generics.css" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet">
+        <link href="css/ForkMeOnGithub.css" rel="stylesheet">
+        <title>Julien leménicier Dev Web</title>
+    </head>
+    <body>
+        <div class="ribbon right white">
+            <a href="https://github.com/mistajuliax/SitePortfolio">Fork me on GitHub</a>
+        </div>
+        <header class="header">
+            <img class="logo" src="img/logo6.png" alt="logo"/>
+            <input class="menu-btn" type="checkbox" id="menu-btn" />
+            <label class="menu-icon" for="menu-btn"><span class="nav-icon"></span></label>
+            <!-- <img id="logo" src="icons/logo.2.png" alt="Menu" /> -->
+            <ul class="menu">                    
+                <li><a href="#home" class="btn">Accueil</a></li>
+                <li><a href="#Portfolio" class="btn">Portfolio</a></li>
+                <li><a href="#Contact" class="btn">Contact</a></li>
+            </ul>
+        </header>
+    
+        <section class="wrapper" id="home">
+            <h1>Développeur Web</h1>
+            <h2>Julien LEMENICIER</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi viverra ligula id tellus finibus lobortis. Aliquam aliquet nunc non mi fringilla, nec placerat est fringilla. Fusce sit amet malesuada neque, quis bibendum leo. Cras blandit massa eget felis rhoncus convallis. Phasellus quis tortor egestas, porttitor mauris non, sodales dui. Phasellus quis lacinia felis. Sed velit eros, egestas et pellentesque at, mattis sed elit. Phasellus sit amet elementum odio. </p>
+        </section>
+        <section class="wrapper" id="Portfolio">
+            <img class="img" src="img/IMG.png" alt="image">
+            <img class="img" src="img/IMG.png" alt="image">
+            <img class="img" src="img/IMG.png" alt="image">
+            <img class="img" src="img/IMG.png" alt="image">
+            <img class="img" src="img/IMG.png" alt="image">
+            <img class="img" src="img/IMG.png" alt="image">
+        </section> 
+        <section class="wrapper" id="recommandations"></section>
+            <h2>Laisser une recommandation</h2>
+            <div class="reco">
+                <label class="label" for="name">Nom :</label>
+                <textarea class="recommandation" id="msg" placeholder="Laisser une recommandation"></textarea>
+                <input type="submit" value="valider">
+            </div>
+        <section class="wrapper" id="Contact">
+            <h1>Me contacter</h1>
+            <form action="/ma-page-de-traitement" method="post">
+                <div>
+                    <label class="label" for="name">Nom :</label>
+                    <input class="formulaire" type="text" id="name" placeholder="Entrez votre Nom">
+                </div>
+                <div>
+                    <label class="label" for="mail">e-mail :</label>
+                    <input class="formulaire" type="email" id="mail" placeholder="Entrez votre Courriel">
+                </div>
+                <div>
+                    <label class="label" for="msg">Message :</label>
+                    <textarea class="text" id="msg" placeholder="Entrez votre message"></textarea>
+                    <input class="menu-btn" type="checkbox" id="menu-btn" />
+                    
+                </div>
+            </form>
+        </section>    
+
+
+        <footer class="footer">
+
+        </footer>
+    </body>
+</html>
+
+
